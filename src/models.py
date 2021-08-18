@@ -114,4 +114,4 @@ class Store(object):
     def showBikes(self):
         print(tabulate(self.bikes, headers="keys", tablefmt="fancy_grid"))
 
-        #Teste no Visual Code do Rafael
+        #Novo teste de commit. Agora vai
