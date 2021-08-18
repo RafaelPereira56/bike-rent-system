@@ -50,7 +50,7 @@ class Store(object):
             if not re.fullmatch(regexEmail, email):
                 raise TypeError('Email invalido.')
             
-            if self.clientByEmail(email):
+            if self.findClientByEmail(email):
                 raise TypeError('Cliente ja cadastrado.')
 
             regexCpf = '^[0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2}$'
